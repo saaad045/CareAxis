@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Coding Services - CareAxis Medical Services Organization</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+        <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <!-- Brand -->
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-right:10px;">
+                
+            </a>
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="medical-billing-services.html">Medical Billing</a></li>
+                            <li><a class="dropdown-item" href="medical-coding-services.html">Medical Coding</a></li>
+                            <li><a class="dropdown-item" href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                            <li><a class="dropdown-item" href="verification-services.html">Verification of Benefits</a></li>
+                            <li><a class="dropdown-item" href="denial-management-services.html">Denial Management</a></li>
+                            <li><a class="dropdown-item" href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                            <li><a class="dropdown-item" href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact-us.html" class="btn btn-primary btn-header">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="coding-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <br>
+                    <br>
+                    <h1 class="mb-4" style="font-size: 42px; color: white;">Expert Medical Coding Services</h1>
+                    <p class="lead mb-4" style="font-size: 19px;">Maximize reimbursement and ensure compliance with our certified medical coding specialists and advanced technology solutions.</p>
+                    <a href="#contact" class="btn btn-hero">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Results Section -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="section5-title">
+                <h2 style="color: var(--primary);">Proven <span class="highlighted-span">Results</span></h2>
+                <p>See how our medical coding services have transformed healthcare practices</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="case-study-card">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-title">Coding Accuracy Rate</div>
+                        <p>Our clients achieve a 97% coding accuracy rate, significantly reducing denials and maximizing reimbursement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="case-study-card">
+                        <div class="stat-number">42%</div>
+                        <div class="stat-title">Reduction in Denials</div>
+                        <p>Practices using our coding services see a 42% reduction in claim denials within the first six months.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="case-study-card">
+                        <div class="stat-number">28%</div>
+                        <div class="stat-title">Increase in Revenue</div>
+                        <p>Average 28% increase in revenue through accurate coding and complete documentation capture.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <div class="case-study-card">
+                        <h4>Coding Accuracy Improvement</h4>
+                        <div class="chart-container">
+                            <canvas id="accuracyChart"></canvas>
+                        </div>
+                        <p>How our coding services improved accuracy for a multi-specialty practice</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="case-study-card">
+                        <h4>Denial Rate Reduction</h4>
+                        <div class="chart-container">
+                            <canvas id="denialChart"></canvas>
+                        </div>
+                        <p>Reduction in denial rates after implementing our coding solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Solutions Section -->
+    <section class="solutions-section">
+        <div class="container">
+            <div class="section5-title">
+                <h2 style="color: var(--primary);">Comprehensive Medical Coding <span class="highlighted-span">Solutions</span></h2>
+                <p>Our end-to-end coding services cover all your needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <h4>Inpatient Coding</h4>
+                        <p>Expert coding for hospital inpatient services using ICD-10-CM and ICD-10-PCS coding systems.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Outpatient Coding</h4>
+                        <p>Accurate coding for hospital outpatient, clinic, and ambulatory surgery center services.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h4>Professional Coding</h4>
+                        <p>Comprehensive coding for physician services across all specialties using CPT and HCPCS codes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>Specialty-Specific Coding</h4>
+                        <p>Specialized coding expertise for cardiology, orthopedics, oncology, and other complex specialties.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Coding Audits</h4>
+                        <p>Comprehensive coding audits to identify compliance risks and revenue opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Coding Education</h4>
+                        <p>Customized coding education for your providers and staff to improve documentation and coding accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Reporting Section -->
+    <section class="reporting-section">
+        <div class="container">
+            <div class="section5-title">
+                <h2 style="color: white;">Detailed and <span class="highlighted-span">Transparent</span> Reporting</h2>
+                <p style="color: white;">Comprehensive insights into your coding performance and financial outcomes</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="reporting-feature">
+                        <div class="reporting-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Performance Dashboards</h4>
+                        <p>Real-time dashboards showing key metrics like coding accuracy, denial rates, and revenue impact.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="reporting-feature">
+                        <div class="reporting-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4>Financial Impact Reports</h4>
+                        <p>Detailed reports showing the financial impact of coding improvements and identified opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="reporting-feature">
+                        <div class="reporting-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Compliance Alerts</h4>
+                        <p>Proactive alerts on potential compliance risks and recommended corrective actions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="reporting-feature">
+                        <div class="reporting-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Benchmarking</h4>
+                        <p>Compare your practice's coding performance against industry benchmarks and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="reporting-feature">
+                        <div class="reporting-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Scheduled Reports</h4>
+                        <p>Customizable scheduled reports delivered to your inbox based on your preferred frequency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section5-title">
+                <h2 style="color: var(--primary);">Benefits of Outsourcing with <span class="highlighted-span">CareAxis</span></h2>
+                <p>Why leading healthcare providers choose our medical coding services</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Certified Experts</h4>
+                        <p>Our team includes CPC, CCS, and other certified coders with extensive experience across all specialties.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI-Powered Technology</h4>
+                        <p>Advanced AI tools that enhance coding accuracy and identify documentation opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Compliance Assurance</h4>
+                        <p>Stay compliant with constantly changing coding guidelines and regulations.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Maximized Reimbursement</h4>
+                        <p>Ensure appropriate reimbursement through accurate and complete coding.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Scalable Solutions</h4>
+                        <p>Flexible services that scale with your practice's changing needs and volumes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Dedicated Support</h4>
+                        <p>Personalized support from coding experts who understand your practice's unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section5-title">
+                <h2 style="color: var(--primary);">Frequently Asked <span class="highlighted-span">Questions</span></h2>
+                <p>Common questions about our medical coding services</p>
+            </div>
+            
+            <div class="accordion" id="codingFAQ">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What certifications do your coders hold?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            Our coding team includes professionals with CPC (Certified Professional Coder), CCS (Certified Coding Specialist), CCS-P (Certified Coding Specialist-Physician-based), and other specialty-specific certifications. All coders undergo rigorous training and continuous education to stay current with coding guidelines and regulations.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How do you ensure coding accuracy?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We employ a multi-layer quality assurance process that includes automated claim scrubbing, peer reviews, and regular audits. Our AI-powered tools flag potential errors before submission, and our quality team performs random audits on 10% of all coded charts to maintain our 97% accuracy standard.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            How do you handle specialty-specific coding requirements?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We assign coders with specific expertise to match your practice's specialty. Our coders specialize in areas such as cardiology, orthopedics, oncology, gastroenterology, and other complex specialties. They stay current with specialty-specific coding guidelines and documentation requirements.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            What is your turnaround time for coding?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            Our standard turnaround time is 24-48 hours for most coding requests. For urgent needs, we offer expedited services with same-day turnaround. We understand the importance of timely coding for cash flow and work to ensure claims are submitted promptly.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            How do you stay current with coding changes?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We have a dedicated compliance team that monitors all coding updates from CMS, AMA, and other regulatory bodies. Our coders undergo monthly training sessions, and our systems are updated in real-time with coding changes. We also provide regular updates to our clients about important coding changes that affect their practice.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            Can you work with our existing EHR system?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            Yes, we are compatible with all major EHR systems including Epic, Cerner, Athenahealth, eClinicalWorks, and others. We can interface directly with your system or work through secure HL7 connections. Our technical team will work with your IT staff to establish a seamless connection.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                            How do you handle coding queries to providers?
+                        </button>
+                    </h2>
+                    <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We have a streamlined process for querying providers when additional documentation is needed. Our coders use standardized query templates that are respectful of provider time and focused on specific clinical information needed for accurate coding. Queries are tracked and followed up on to ensure timely responses.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                            What measures do you take to ensure data security?
+                        </button>
+                    </h2>
+                    <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We employ enterprise-grade security measures including encryption in transit and at rest, multi-factor authentication, and regular security audits. Our systems are HIPAA compliant, and all staff undergo rigorous security training. We also sign Business Associate Agreements (BAAs) with all our clients.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                            How do you measure the success of your coding services?
+                        </button>
+                    </h2>
+                    <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#codingFAQ">
+                        <div class="accordion-body">
+                            We track multiple key performance indicators including coding accuracy rate, denial rate, days in A/R, first-pass acceptance rate, and revenue impact. These metrics are included in your monthly performance reports, and we work with you to set and achieve specific goals for your practice.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Trusted Companies-->
+    <section id="trusted" class="trusted">
+        <div class="container text-center">
+            <h2 class="mb-4"><span class="highlighted-span">Trusted by Leading</span> Healthcare Organizations</h2>
+
+            <div class="logo-grid">
+                <!-- Healthcare-related logos -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/HIPAA_Logo.svg/1200px-HIPAA_Logo.svg.png"
+                        alt="HIPAA Compliant" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Availity_Logo.svg/1280px-Availity_Logo.svg.png"
+                        alt="Availity" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Epic_Systems_Logo.svg/1200px-Epic_Systems_Logo.svg.png"
+                        alt="Epic Systems" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cerner_logo_2019.svg/1200px-Cerner_logo_2019.svg.png"
+                        alt="Cerner" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Healthcare Partners</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.5%</div>
+                    <div class="stat-label">Compliance Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">48h</div>
+                    <div class="stat-label">Avg. Claim Processing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: var(--primary);">Ready to Transform Your Practice?</h2>
+            <p class="lead mb-4">Talk directly with our experts and get started today.</p>
+            <a href="tel:+1234567890" class="btn btn-cta">📞 Call Now</a>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+     <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer -->
+       <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-bottom:10px;">
+                    <p>Transforming healthcare through innovative solutions and services that empower medical practices
+                        to thrive.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="medical-billing-services.html">Medical Billing</a></li>
+                        <li><a href="medical-coding-services.html">Medical Coding</a></li>
+                        <li><a href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                        <li><a href="verification-services.html">Verification of Benefits</a></li>
+                        <li><a href="denial-management-services.html">Denial Management</a></li>
+                        <li><a href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                        <li><a href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Healthcare Ave, Medical Center, CA 94301</li>
+                        <li><i class="fas fa-phone me-2"></i> (800) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@careaxisus.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <p class="mb-0">&copy; 2023 CareAxis. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end mb-3">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

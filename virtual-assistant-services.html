@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Medical Staff - CareAxis Medical Services Organization</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-right:10px;">
+                
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="medical-billing-services.html">Medical Billing</a></li>
+                            <li><a class="dropdown-item" href="medical-coding-services.html">Medical Coding</a></li>
+                            <li><a class="dropdown-item" href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                            <li><a class="dropdown-item" href="verification-services.html">Verification of Benefits</a></li>
+                            <li><a class="dropdown-item" href="denial-management-services.html">Denial Management</a></li>
+                            <li><a class="dropdown-item" href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                            <li><a class="dropdown-item" href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact-us.html" class="btn btn-primary btn-header">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="virtual-staff-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <br>
+                    <br>
+                    <h1 class="mb-4" style="font-size: 42px; color: white;">Virtual Medical Staff Solutions</h1>
+                    <p class="lead mb-4" style="font-size: 19px;">Access skilled healthcare professionals on-demand to scale your practice without the overhead of full-time employees.</p>
+                    <a href="#contact" class="btn btn-hero">Hire Virtual Staff Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Virtual Staff Section -->
+    <section class="what-is-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">What is <span class="highlighted-span">Virtual Medical Staff</span>?</h2>
+                <p>Revolutionizing healthcare staffing with flexible, remote professionals</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <p>Virtual medical staff are skilled healthcare professionals who work remotely to support medical practices with various administrative and clinical tasks. This modern staffing solution allows practices to access specialized expertise without the overhead costs of full-time employees.</p>
+                    <p>With the rise of telehealth and remote work, virtual staff have become an essential component of efficient healthcare delivery. They can handle everything from patient scheduling and billing to clinical documentation and care coordination, all while working off-site.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <p>At CareAxis, we've developed a comprehensive virtual staffing solution that connects practices with highly qualified professionals specifically trained in healthcare operations. Our rigorous screening process ensures you get staff who are not only skilled but also understand the unique needs of medical practices.</p>
+                    <p>Our virtual staff integrate seamlessly with your existing team and systems, providing flexible support that scales with your practice's needs without the commitment of traditional hiring.</p>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="virtual-staff-card">
+                        <div class="virtual-staff-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h4>Remote Professionals</h4>
+                        <p>Skilled healthcare staff working remotely with secure access to your systems.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="virtual-staff-card">
+                        <div class="virtual-staff-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Flexible Scheduling</h4>
+                        <p>Access staff when you need them, from a few hours to full-time coverage.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="virtual-staff-card">
+                        <div class="virtual-staff-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Cost-Effective</h4>
+                        <p>Eliminate overhead costs associated with full-time employees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services8-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Virtual Staffing <span class="highlighted-span">Solutions</span></h2>
+                <p>Comprehensive remote staffing services for your practice</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Virtual Receptionists</h4>
+                        <p>Remote front desk staff handling patient scheduling, calls, and inquiries with the same professionalism as in-person staff.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4>Virtual Billers & Coders</h4>
+                        <p>Experienced medical billers and coders working remotely to manage your revenue cycle efficiently.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Virtual Medical Assistants</h4>
+                        <p>Remote clinical support staff assisting with patient communication, documentation, and care coordination.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Virtual AR Specialists</h4>
+                        <p>Accounts receivable experts managing claims follow-up, denial management, and payment posting remotely.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h4>Virtual Call Center</h4>
+                        <p>Dedicated phone support staff handling patient calls, appointment reminders, and follow-up communications.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="service8-card">
+                        <div class="service8-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4>Virtual Practice Managers</h4>
+                        <p>Experienced healthcare administrators providing remote practice management and operational support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Roles Section -->
+    <section class="roles-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Virtual Staff <span class="highlighted-span">Roles</span></h2>
+                <p>Specialized professionals available for your practice</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>Medical Coders</h4>
+                        <p>Certified professionals ensuring accurate coding and compliance with latest guidelines.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> CPC, CCS certified</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Specialty-specific expertise</li>
+                            <li><i class="fas fa-check text-success me-2"></i> ICD-10, CPT proficiency</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Medical Billers</h4>
+                        <p>Experienced billers managing claims submission, follow-up, and payment processing.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Claims submission</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Denial management</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Payment posting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-user-injured"></i>
+                        </div>
+                        <h4>Patient Coordinators</h4>
+                        <p>Compassionate professionals handling patient communication and scheduling.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Appointment scheduling</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Patient communication</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Insurance verification</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Call Center Agents</h4>
+                        <p>Professional phone staff managing patient inquiries and support calls.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Call answering</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Appointment reminders</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Patient follow-up</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h4>Medical Assistants</h4>
+                        <p>Clinical support staff assisting with patient care coordination.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Clinical documentation</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Patient education</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Care coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>AR Specialists</h4>
+                        <p>Accounts receivable experts focused on revenue recovery.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Claims follow-up</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Denial appeals</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Payment resolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">How Our Virtual Staffing <span class="highlighted-span">Works</span></h2>
+                <p>Simple process to get the remote staff you need</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Needs Assessment</h4>
+                        <p>We begin with a comprehensive assessment of your practice's specific needs, workflow, and challenges to determine the ideal virtual staffing solution.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Staff Matching</h4>
+                        <p>Our team matches you with virtual staff who have the specific skills, experience, and personality to fit your practice's unique culture and needs.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Integration & Training</h4>
+                        <p>We handle all technical setup, training, and integration to ensure your virtual staff seamlessly becomes part of your team.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Ongoing Management</h4>
+                        <p>Our dedicated account managers provide continuous support, performance monitoring, and quality assurance.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Flexible Scaling</h4>
+                        <p>Easily scale your virtual staff up or down based on your practice's changing needs without the hassle of traditional hiring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Benefits of Virtual <span class="highlighted-span">Staff</span></h2>
+                <p>Why healthcare practices are choosing virtual staffing solutions</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Cost Savings</h4>
+                        <p>Reduce overhead costs by up to 60% compared to full-time employees—no benefits, office space, or equipment costs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Flexibility</h4>
+                        <p>Scale your workforce up or down based on patient volume, seasonality, or special projects without commitment.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Quick Implementation</h4>
+                        <p>Get staffed in days, not months—avoid the lengthy hiring and training process of traditional employees.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Access to Expertise</h4>
+                        <p>Tap into specialized skills and experience that may be difficult to find or afford in your local market.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Reduced Risk</h4>
+                        <p>No long-term employment commitments—adjust your staffing based on practice performance and needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-focus"></i>
+                        </div>
+                        <h4>Focus on Patients</h4>
+                        <p>Free up your in-house team to focus on patient care while virtual staff handle administrative tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Virtual Staffing <span class="highlighted-span">Plans</span></h2>
+                <p>Flexible options to meet your practice's needs and budget</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Part-Time</h3>
+                        <div class="price-amount">$18<span class="price-duration">/hour</span></div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check text-success me-2"></i> 20-30 hours per week</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Dedicated virtual staff</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Basic training & setup</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Email support</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Weekly performance reports</li>
+                            <li><i class="fas fa-times text-secondary me-2"></i> 24/7 support</li>
+                            <li><i class="fas fa-times text-secondary me-2"></i> Dedicated account manager</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="pricing-card featured">
+                        <h3>Full-Time</h3>
+                        <div class="price-amount">$2,899<span class="price-duration">/month</span></div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check text-success me-2"></i> 40 hours per week</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Dedicated virtual staff</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Comprehensive training & setup</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Priority support</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Daily performance reports</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Monthly performance reviews</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price-amount">Custom<span class="price-duration">/quote</span></div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check text-success me-2"></i> Multiple virtual staff</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Custom hours coverage</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Custom training & integration</li>
+                            <li><i class="fas fa-check text-success me-2"></i> 24/7 dedicated support</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Real-time reporting dashboard</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Dedicated account team</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Customized solutions</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Virtual Staffing Success <span class="highlighted-span">Stories</span></h2>
+                <p>Real practices achieving results with our virtual staff solutions</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div>
+                                <h4>Cardiology Practice</h4>
+                                <p>12 providers, Texas</p>
+                            </div>
+                        </div>
+                        <div class="case-study-body">
+                            <p><strong>Challenge:</strong> Struggling with claim denials and patient follow-up due to limited staff.</p>
+                            <p><strong>Solution:</strong> Implemented two virtual AR specialists and one virtual medical assistant.</p>
+                            <p><strong>Results:</strong> Reduced denials by 65% and improved patient satisfaction scores by 40% within 6 months.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-teeth"></i>
+                            </div>
+                            <div>
+                                <h4>Dental Group</h4>
+                                <p>8 locations, Florida</p>
+                            </div>
+                        </div>
+                        <div class="case-study-body">
+                            <p><strong>Challenge:</strong> Inconsistent patient scheduling and high no-show rates across locations.</p>
+                            <p><strong>Solution:</strong> Centralized scheduling with a team of virtual patient coordinators.</p>
+                            <p><strong>Results:</strong> Reduced no-shows by 35% and increased appointment capacity by 22%.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <h4>Primary Care Network</h4>
+                                <p>25 providers, California</p>
+                            </div>
+                        </div>
+                        <div class="case-study-body">
+                            <p><strong>Challenge:</strong> Overwhelmed front desk staff leading to long phone wait times.</p>
+                            <p><strong>Solution:</strong> Implemented virtual call center to handle after-hours and overflow calls.</p>
+                            <p><strong>Results:</strong> Reduced average wait time from 8 minutes to 1.5 minutes and improved patient satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <div>
+                                <h4>Orthopedic Surgery Center</h4>
+                                <p>6 surgeons, New York</p>
+                            </div>
+                        </div>
+                        <div class="case-study-body">
+                            <p><strong>Challenge:</strong> Complex coding requirements leading to revenue leakage.</p>
+                            <p><strong>Solution:</strong> Hired specialized virtual orthopedic coders and billers.</p>
+                            <p><strong>Results:</strong> Increased collections by 28% and reduced coding errors by 75%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section0-title">
+                <h2 style="color: var(--primary);">Virtual Staffing <span class="highlighted-span">FAQs</span></h2>
+                <p>Common questions about our virtual medical staff solutions</p>
+            </div>
+            
+            <div class="accordion" id="virtualStaffFAQ">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How quickly can I get started with virtual staff?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            Most practices can be onboarded with virtual staff within 3-5 business days. The process includes needs assessment, staff matching, system setup, and training. We work efficiently to minimize disruption to your practice while ensuring a smooth integration.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How do you ensure data security with remote staff?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            We implement enterprise-grade security measures including VPN access, multi-factor authentication, encrypted communications, and regular security audits. All staff sign strict confidentiality agreements and undergo comprehensive security training. Our systems are HIPAA compliant, and we conduct regular security assessments to protect your patient data.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            What qualifications do your virtual staff have?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            Our virtual staff are highly qualified professionals with specific healthcare experience. Depending on the role, they may have certifications such as CPC (Certified Professional Coder), CMA (Certified Medical Assistant), or CHAA (Certified Healthcare Access Associate). All staff undergo rigorous screening, background checks, and role-specific testing before placement.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Can virtual staff work with our existing systems?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            Yes, our virtual staff are trained on all major EHR/EMR systems, practice management software, and healthcare platforms. We ensure compatibility with your existing systems during the onboarding process and provide any necessary additional training to ensure seamless integration with your practice's workflow.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            What if I'm not satisfied with a virtual staff member?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            We offer a satisfaction guarantee. If you're not completely satisfied with a virtual staff member, we will replace them at no additional cost. We carefully document your feedback to ensure better matching in the future and continuously work to maintain the highest quality standards across our virtual staff team.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            How do you monitor and ensure quality of work?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#virtualStaffFAQ">
+                        <div class="accordion-body">
+                            We employ multiple quality assurance measures including regular performance reviews, productivity tracking, quality audits, and client feedback systems. Our account managers conduct weekly check-ins and provide detailed performance reports. We also use technology to monitor work output and ensure adherence to quality standards.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Trusted Companies-->
+    <section id="trusted" class="trusted">
+        <div class="container text-center">
+            <h2 class="mb-4"><span class="highlighted-span">Trusted by Leading</span> Healthcare Organizations</h2>
+
+            <div class="logo-grid">
+                <!-- Healthcare-related logos -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/HIPAA_Logo.svg/1200px-HIPAA_Logo.svg.png"
+                        alt="HIPAA Compliant" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Availity_Logo.svg/1280px-Availity_Logo.svg.png"
+                        alt="Availity" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Epic_Systems_Logo.svg/1200px-Epic_Systems_Logo.svg.png"
+                        alt="Epic Systems" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cerner_logo_2019.svg/1200px-Cerner_logo_2019.svg.png"
+                        alt="Cerner" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Healthcare Partners</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.5%</div>
+                    <div class="stat-label">Compliance Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">48h</div>
+                    <div class="stat-label">Avg. Claim Processing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+     <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: var(--primary);">Ready to Transform Your Practice?</h2>
+            <p class="lead mb-4">Talk directly with our experts and get started today.</p>
+            <a href="tel:+1234567890" class="btn btn-cta">📞 Call Now</a>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+     <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer -->
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-bottom:10px;">
+                    <p>Transforming healthcare through innovative solutions and services that empower medical practices
+                        to thrive.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="medical-billing-services.html">Medical Billing</a></li>
+                        <li><a href="medical-coding-services.html">Medical Coding</a></li>
+                        <li><a href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                        <li><a href="verification-services.html">Verification of Benefits</a></li>
+                        <li><a href="denial-management-services.html">Denial Management</a></li>
+                        <li><a href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                        <li><a href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Healthcare Ave, Medical Center, CA 94301</li>
+                        <li><i class="fas fa-phone me-2"></i> (800) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@careaxisus.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <p class="mb-0">&copy; 2023 CareAxis. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end mb-3">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom js-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

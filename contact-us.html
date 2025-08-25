@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CareAxis Medical Services Organization</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <!-- Brand -->
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-right:10px;">
+                
+            </a>
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="medical-billing-services.html">Medical Billing</a></li>
+                            <li><a class="dropdown-item" href="medical-coding-services.html">Medical Coding</a></li>
+                            <li><a class="dropdown-item" href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                            <li><a class="dropdown-item" href="verification-services.html">Verification of Benefits</a></li>
+                            <li><a class="dropdown-item" href="denial-management-services.html">Denial Management</a></li>
+                            <li><a class="dropdown-item" href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                            <li><a class="dropdown-item" href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact-us.html" class="btn btn-primary btn-header">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <br>
+                    <br>
+                    <h1 class="mb-4" style="font-size: 42px; color: white;">Thank you for showing your <br> interest in
+                        CareAxis</h1>
+                    <p class="lead mb-4" style="font-size: 19px;">We’re keen to know more about your practice! Whether
+                        you are a hospital, lab, imaging service or an independent medical provider, you need to deal
+                        with insurance claims recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="section3-title">
+                <h2 style="color: #1a76d2e6;">Send Us a <span class="highlighted-span">Message</span></h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <input type="text" class="form-control" placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <select class="form-select" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="Medical Billing">Medical Billing</option>
+                                    <option value="Practice Management">Practice Management</option>
+                                    <option value="Revenue Cycle Management">Revenue Cycle Management</option>
+                                    <option value="Credentialing Services">Credentialing Services</option>
+                                    <option value="Compliance Solutions">Compliance Solutions</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-form">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section3-title">
+                <h2 style="color: #1a76d2e6;">Contact Info</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="CareAxis Office">
+                        </div>
+                        <div class="location-overlay">
+                            <div class="location-details">
+                                <h3>Our Headquarters</h3>
+                                <p><i class="fas fa-map-marker-alt me-2"></i> 123 Healthcare Ave, Medical Center, CA
+                                    94301</p>
+                                <p><i class="fas fa-clock me-2"></i> Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p><i class="fas fa-phone me-2"></i> (800) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-detail-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <h4>Phone</h4>
+                                <p>Main: (800) 123-4567</p>
+                                <p>Support: (800) 765-4321</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-detail-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <p>info@careaxis.com</p>
+                                <p>support@careaxis.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-detail-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Working Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                                <p>Sat: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-detail-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h4>Live Chat</h4>
+                                <p>Available 24/7</p>
+                                <p>Start chatting now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101459.18850005057!2d-122.08167141431188!3d37.38747420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b5c74d384d%3A0x6ca10c3f2e1e7a7a!2sStanford%20Medical%20Center!5e0!3m2!1sen!2sus!4v1685489323456!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!--Trusted Companies-->
+    <section id="trusted" class="trusted">
+        <div class="container text-center">
+            <h2 class="mb-4"><span class="highlighted-span">Trusted by Leading</span> Healthcare Organizations</h2>
+
+            <div class="logo-grid">
+                <!-- Healthcare-related logos -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/HIPAA_Logo.svg/1200px-HIPAA_Logo.svg.png"
+                        alt="HIPAA Compliant" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Availity_Logo.svg/1280px-Availity_Logo.svg.png"
+                        alt="Availity" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Epic_Systems_Logo.svg/1200px-Epic_Systems_Logo.svg.png"
+                        alt="Epic Systems" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cerner_logo_2019.svg/1200px-Cerner_logo_2019.svg.png"
+                        alt="Cerner" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athenahealth_logo.svg/1200px-Athenahealth_logo.svg.png"
+                        alt="Athenahealth" class="img-fluid trusted-logo">
+                </div>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NextGen_Healthcare_logo.svg/1200px-NextGen_Healthcare_logo.svg.png"
+                        alt="NextGen Healthcare" class="img-fluid trusted-logo">
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Healthcare Partners</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.5%</div>
+                    <div class="stat-label">Compliance Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">48h</div>
+                    <div class="stat-label">Avg. Claim Processing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+   <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: var(--primary);">Ready to Transform Your Practice?</h2>
+            <p class="lead mb-4">Talk directly with our experts and get started today.</p>
+            <a href="tel:+1234567890" class="btn btn-cta">📞 Call Now</a>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+     <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer -->
+
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="./img/logo-4.png" alt="CareAxis Logo" style="height:100px; margin-bottom:10px;">
+                    <p>Transforming healthcare through innovative solutions and services that empower medical practices
+                        to thrive.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="medical-billing-services.html">Medical Billing</a></li>
+                        <li><a href="medical-coding-services.html">Medical Coding</a></li>
+                        <li><a href="medical-credentialing-services.html">Medical Credentialing</a></li>
+                        <li><a href="verification-services.html">Verification of Benefits</a></li>
+                        <li><a href="denial-management-services.html">Denial Management</a></li>
+                        <li><a href="accounts-receivable-services.html">Accounts Receivable</a></li>
+                        <li><a href="virtual-assistant-services.html">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Healthcare Ave, Medical Center, CA 94301</li>
+                        <li><i class="fas fa-phone me-2"></i> (800) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@careaxisus.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <p class="mb-0">&copy; 2023 CareAxis. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end mb-3">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
